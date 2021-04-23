@@ -1,12 +1,14 @@
 package fr.algorithmie;
 
-public class FirstLast6 {
+public class FirstLast {
+
     public static void main(String[] args) {
         int[] arrayOne = {-1, 15, -3, 0, 8, 7, 4, -2, 28, 7, -1, 17, 2, 3, 0, 14, -4};
         boolean verif = false;
-        if (arrayOne.length > 1 || (arrayOne[0] == 6 || arrayOne[arrayOne.length - 1] == 6)) {
+        System.out.println(arrayOne[arrayOne.length-1]);
+        if (arrayOne.length > 1 && arrayOne[0] == arrayOne[arrayOne.length -1]) {
             verif = true;
-        }else{
+        } else {
             verif = false;
         }
         System.out.println(verif);
