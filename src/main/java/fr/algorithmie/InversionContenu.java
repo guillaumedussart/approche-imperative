@@ -1,15 +1,23 @@
 package fr.algorithmie;
 
-import fr.algorithmie.AfficheInverse;
 
 import java.util.Arrays;
 
+/**
+ *
+ */
 public class InversionContenu {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         InversionContenu aff = new InversionContenu();
         aff.displayCopyArrayReverse();
     }
 
+    /**
+     *
+     */
     public void displayCopyArrayReverse() {
         AfficheInverse aff = new AfficheInverse();
         for (int i = 0; i < aff.array.length; i++) {

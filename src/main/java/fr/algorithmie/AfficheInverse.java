@@ -2,12 +2,22 @@ package fr.algorithmie;
 
 import java.util.Arrays;
 
+/**
+ * AfficheInverse
+ * multiple array display
+ */
 public class AfficheInverse {
 
     public int[] array = {1, 15, -3, 0, 8, 7, 4, -2, 28, 7, -1, 17, 2, 3, 0, 14, -4};
     public int[] copiedArray = new int[this.array.length];
+    public int[] copiedArrayPair = new int[this.array.length];
+    public int[] copiedArrayPairIndex = new int[this.array.length];
+    public int[] copiedArrayOdd = new int[this.array.length];
 
 
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         AfficheInverse aff = new AfficheInverse();
         System.out.println("Affiche le tableau");
@@ -18,6 +28,9 @@ public class AfficheInverse {
         aff.displayArrayCopy();
     }
 
+    /**
+     * display array
+     */
     public void displayArray() {
 
         for (int i = 0; i < this.array.length; i++) {
@@ -28,6 +41,9 @@ public class AfficheInverse {
         System.out.println(Arrays.toString(this.array));
     }
 
+    /**
+     *
+     */
     public void displayArrayReverse() {
 
         for (int i = 0; i < this.array.length / 2; i++) {
@@ -39,6 +55,9 @@ public class AfficheInverse {
 
     }
 
+    /**
+     *
+     */
     public void displayArrayCopy() {
         for (int i = 0; i < this.array.length; i++) {
             this.copiedArray[i] = this.array[i];
