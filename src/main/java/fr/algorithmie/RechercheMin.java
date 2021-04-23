@@ -18,6 +18,5 @@ public class RechercheMin {
             }
         }
         System.out.println(max);
-        ;
     }
 }
