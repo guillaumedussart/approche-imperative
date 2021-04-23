@@ -1,21 +1,19 @@
 package fr.algorithmie;
 
-import java.util.Arrays;
-import java.util.OptionalInt;
+public class RechercheMin {
 
-public class RechercheMax {
     AfficheInverse aff = new AfficheInverse();
 
     public static void main(String[] args) {
-        RechercheMax searchMax = new RechercheMax();
+        RechercheMin searchMin = new RechercheMin();
         System.out.println("Le plus grand nombre du tableau est :");
-        searchMax.arrayMax();
+        searchMin.arrayMin();
     }
 
-    public void arrayMax() {
+    public void arrayMin() {
         int max = aff.array[0];
         for (int ktr = 0; ktr < aff.array.length; ktr++) {
-            if (aff.array[ktr] > max) {
+            if (aff.array[ktr] < max) {
                 max = aff.array[ktr];
             }
         }
