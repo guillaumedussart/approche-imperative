@@ -2,8 +2,9 @@ package fr.algorithmie;
 
 import java.util.Scanner;
 
-public class InteractifTantQue {
-    public static void main(String[] args) {
+public class InteractifTableMult {
+
+    public static void main(String[] args){
         boolean verif = false;
         System.out.println("Veuillez saisir un nombre :");
         Scanner scanner = new Scanner(System.in);
@@ -15,7 +16,10 @@ public class InteractifTantQue {
             verif= true;
         }
         if(verif){
-            System.out.println("Cool vous avez trouvez");
+            System.out.println("Voici la table de "+nb);
+            for (int i = 0 ;i<=10;i++){
+                System.out.println(nb+" x "+i+" = "+nb*i);
+            }
         }
     }
 }
