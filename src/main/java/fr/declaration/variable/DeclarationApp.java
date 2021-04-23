@@ -12,9 +12,11 @@ public class DeclarationApp {
         float floatfirst = 1.2f;
         double doublefirst = 5.2d;
         boolean boolfirst = true;
-        var total = bytefirst+intfirst;
-        String randonString = "Voici le résultat d’un calcul : \n"+bytefirst+"+"+intfirst+"="+total;
+        var total = bytefirst + intfirst;
+        String randonString = "Voici le résultat d’un calcul : \n" + bytefirst + "+" + intfirst + "=" + total;
         System.out.println(randonString);
+        int[] tab = {-1, 2, 3, 5, 4, -12};
+        System.out.println(tab.length);
     }
 
 
