@@ -3,8 +3,9 @@ package fr.algorithmie;
 import java.util.Scanner;
 
 public class InteractifFibonacci {
-    public static void main(String[] args) {
 
+
+    public static void main(String[] args) {
 
         System.out.println("Quel rang de la suite de fibonacci voulez vous ?");
         Scanner sc = new Scanner(System.in);
