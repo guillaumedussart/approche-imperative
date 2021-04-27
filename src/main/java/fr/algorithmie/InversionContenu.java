@@ -11,14 +11,13 @@ public class InversionContenu {
      * @param args
      */
     public static void main(String[] args) {
-        InversionContenu aff = new InversionContenu();
-        aff.displayCopyArrayReverse();
+        displayCopyArrayReverse();
     }
 
     /**
      *
      */
-    public void displayCopyArrayReverse() {
+    public static void displayCopyArrayReverse() {
         AfficheInverse aff = new AfficheInverse();
         for (int i = 0; i < aff.array.length; i++) {
             aff.copiedArray[i] = aff.array[i];

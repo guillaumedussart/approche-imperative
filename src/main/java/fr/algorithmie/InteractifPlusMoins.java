@@ -6,11 +6,12 @@ import java.util.Scanner;
 
 
 public class InteractifPlusMoins {
+
+
     public static void main(String[] args){
         int myVarNumber = 6;
         int tryPlay = 0;
         boolean verif = true;
-
 
         while (verif){
             System.out.println("Veuillez saisir un nombre :");

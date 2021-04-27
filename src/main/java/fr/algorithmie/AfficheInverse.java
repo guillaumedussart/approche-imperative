@@ -8,60 +8,59 @@ import java.util.Arrays;
  */
 public class AfficheInverse {
 
-    public int[] array = {1, 15, -3, 0, 8, 7, 4, -2, 28, 7, -1, 17, 2, 3, 0, 14, -4};
-    public int[] copiedArray = new int[this.array.length];
-    public int[] copiedArrayPair = new int[this.array.length];
-    public int[] copiedArrayPairIndex = new int[this.array.length];
-    public int[] copiedArrayOdd = new int[this.array.length];
+    public static int[] array = {1, 15, -3, 0, 8, 7, 4, -2, 28, 7, -1, 17, 2, 3, 0, 14, -4};
+    public static int[] copiedArray = new int[array.length];
+    public static int[] copiedArrayPair = new int[array.length];
+    public static int[] copiedArrayPairIndex = new int[array.length];
+    public static int[] copiedArrayOdd = new int[array.length];
 
 
     /**
      * @param args
      */
     public static void main(String[] args) {
-        AfficheInverse aff = new AfficheInverse();
         System.out.println("Affiche le tableau");
-        aff.displayArray();
+        displayArray();
         System.out.println("Affiche le tableau a l'envers");
-        aff.displayArrayReverse();
+        displayArrayReverse();
         System.out.println("Affiche la copie du tableau courant");
-        aff.displayArrayCopy();
+        displayArrayCopy();
     }
 
     /**
      * display array
      */
-    public void displayArray() {
+    public static void displayArray() {
 
-        for (int i = 0; i < this.array.length; i++) {
-            int temp = this.array[i];
-            this.array[i] = this.array[this.array.length - i - 1];
-            this.array[this.array.length - i - 1] = temp;
+        for (int i = 0; i < array.length; i++) {
+            int temp = array[i];
+            array[i] = array[array.length - i - 1];
+            array[array.length - i - 1] = temp;
         }
-        System.out.println(Arrays.toString(this.array));
+        System.out.println(Arrays.toString(array));
     }
 
     /**
      *
      */
-    public void displayArrayReverse() {
+    public static void displayArrayReverse() {
 
-        for (int i = 0; i < this.array.length / 2; i++) {
-            int temp = this.array[i];
-            this.array[i] = this.array[this.array.length - i - 1];
-            this.array[this.array.length - i - 1] = temp;
+        for (int i = 0; i < array.length / 2; i++) {
+            int temp = array[i];
+            array[i] = array[array.length - i - 1];
+            array[array.length - i - 1] = temp;
         }
-        System.out.println(Arrays.toString(this.array));
+        System.out.println(Arrays.toString(array));
 
     }
 
     /**
      *
      */
-    public void displayArrayCopy() {
-        for (int i = 0; i < this.array.length; i++) {
-            this.copiedArray[i] = this.array[i];
+    public static void displayArrayCopy() {
+        for (int i = 0; i < array.length; i++) {
+            copiedArray[i] = array[i];
         }
-        System.out.println(Arrays.toString(this.copiedArray));
+        System.out.println(Arrays.toString(copiedArray));
     }
 }
